@@ -98,6 +98,10 @@ public class Cliente extends Usuario
 	
 	public void comprarPieza(int identificadorUnico, String modalidad)
 	{
-		//POR COMPLETAR
+		String modalidad2 = userManager.getGaleria().getVentasManager().getVentas().get(identificadorUnico).getTipoVenta();
+		if (modalidad == modalidad2)
+		{
+			userManager.getGaleria().getVentasManager().getVentas().get(identificadorUnico).venderPieza();
+		}
 	}
 }

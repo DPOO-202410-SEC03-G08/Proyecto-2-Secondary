@@ -1,5 +1,7 @@
 package uniandes.dpoo.galeria.modelo.usuario;
 
+import java.util.Date;
+
 public class Operario extends Usuario
 {
 	public Operario(String nombre, String correo, int numeroCelular, int contraseña, UserManager userManager) {
@@ -7,8 +9,14 @@ public class Operario extends Usuario
 	}
 
 	@Override
-	public String getTipoUsuario() {
+	public String getTipoUsuario() 
+	{
 		return "OPERARIO";
 	}
-
+	
+	public void modificaFechaRetorno(int idPieza, Date fecha) 
+	{
+		userManager.getGaleria().getInventario().getPieza(idPieza).setFechaEntrega(fecha);
+	}
+	
 }

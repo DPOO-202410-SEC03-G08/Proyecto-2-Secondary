@@ -11,7 +11,7 @@ public class Galeria
 	private UserManager userManager;
 	private VentasManager ventasManager;
 	
-	public Galeria(uniandes.dpoo.galeria.modelo.Inventario inventario, UserManager userManager, VentasManager ventasManager) 
+	public Galeria(Inventario inventario, UserManager userManager, VentasManager ventasManager) 
 	{
 		super();
 		this.inventario = inventario;
@@ -40,34 +40,13 @@ public class Galeria
 		return ventasManager;
 	}
 
-	public void cargarInventario (String archivo) throws IOException
+	public void cargarGaleria (String archivo) throws IOException
 	{
 		//POR COMPLETAR
 	}
 	
-	public void guardarInventario (String archivo)
+	public void salvarGaleria (String archivo)
 	{
 		//POR COMPLETAR
 	}
-	
-	public void cargarProcesos (String archivo)
-	{
-		//POR COMPLETAR
-	}
-	
-	public void guardarProcesos (String archivo)
-	{
-		//POR COMPLETAR
-	}
-	
-	public void cargarUsuarios (String archivo)
-	{
-		//POR COMPLETAR
-	}
-	
-	public void guardarUsuarios (String archivo)
-	{
-		//POR COMPLETAR
-	}
-	
 }
