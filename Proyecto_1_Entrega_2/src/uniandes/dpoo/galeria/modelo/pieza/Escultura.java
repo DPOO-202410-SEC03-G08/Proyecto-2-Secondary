@@ -5,7 +5,6 @@ import java.util.List;
 
 public class Escultura extends Pieza
 {
-
 	private double alto;
 	private double ancho;
 	private double profundidad;
