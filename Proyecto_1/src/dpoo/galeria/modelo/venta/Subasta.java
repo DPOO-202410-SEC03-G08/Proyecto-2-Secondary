@@ -9,14 +9,18 @@ public class Subasta extends Venta{
 	public int precioMinimoSubasta;
 	public int precioOfertaSubasta;
 	
-	public Subasta () {
-		
-		this.ID = ID;
+	
+	
+	public Subasta(String nombre, int celular, int userID, String password, String iD, int precioInicialSubasta, 
+			int precioMinimoSubasta, int precioOfertaSubasta) 
+	{
+		super(nombre, celular, userID, password);
+		this.ID = iD;
 		this.precioInicialSubasta = precioInicialSubasta;
 		this.precioMinimoSubasta = precioMinimoSubasta;
 		this.precioOfertaSubasta = precioOfertaSubasta;
 	}
-	
+
 	public void venderSubasta (Pieza pieza, boolean confirmacion) {
 		
 	}

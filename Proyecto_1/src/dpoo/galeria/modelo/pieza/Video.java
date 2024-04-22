@@ -1,20 +1,83 @@
 package dpoo.galeria.modelo.pieza;
 
+import java.util.Date;
+import java.util.List;
+
 public class Video extends Pieza {
 
-	public int duracion;
-	public String resolucionVideo;
-	public int FPS;
-	public String relacionAspecto;
-	public String formato;
+	private int duracion;
+	private String resolucionVideo;
+	private int framesPerSecond;
+	private String relacionAspecto;
+	private String formato;
 	
-	public Video () {
-		
+	
+	public Video(String titulo, Date fechaCreacion, String lugarCreacion, List<String> autores, String modalidadVenta, Date fechaEntrega, 
+			int iD, int iDPropietario, List<String> detallesAdicionales, int duracion, String resolucionVideo, int framesPerSecond, 
+			String relacionAspecto, String formato) 
+	{
+		super(titulo, fechaCreacion, lugarCreacion, autores, modalidadVenta, fechaEntrega, iD, iDPropietario, detallesAdicionales);
 		this.duracion = duracion;
 		this.resolucionVideo = resolucionVideo;
-		this.FPS = FPS;
+		this.framesPerSecond = framesPerSecond;
 		this.relacionAspecto = relacionAspecto;
 		this.formato = formato;
+	}
+
+
+	/**
+	 * @return the resolucionVideo
+	 */
+	public String getResolucionVideo() {
+		return resolucionVideo;
+	}
+
+
+	/**
+	 * @param resolucionVideo the resolucionVideo to set
+	 */
+	public void setResolucionVideo(String resolucionVideo) {
+		this.resolucionVideo = resolucionVideo;
+	}
+
+
+	/**
+	 * @return the relacionAspecto
+	 */
+	public String getRelacionAspecto() {
+		return relacionAspecto;
+	}
+
+
+	/**
+	 * @param relacionAspecto the relacionAspecto to set
+	 */
+	public void setRelacionAspecto(String relacionAspecto) {
+		this.relacionAspecto = relacionAspecto;
+	}
+
+
+	/**
+	 * @return the duracion
+	 */
+	public int getDuracion() {
+		return duracion;
+	}
+
+
+	/**
+	 * @return the framesPerSecond
+	 */
+	public int getFramesPerSecond() {
+		return framesPerSecond;
+	}
+
+
+	/**
+	 * @return the formato
+	 */
+	public String getFormato() {
+		return formato;
 	}
 	
 	/*
