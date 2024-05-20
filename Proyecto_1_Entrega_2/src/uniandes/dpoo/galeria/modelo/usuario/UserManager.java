@@ -25,6 +25,7 @@ public class UserManager
 		usuarios.add(usuario);
 	}
 	
+	
 	public void removeUsuario(Usuario usuario)
 	{
 		usuarios.remove(usuario);

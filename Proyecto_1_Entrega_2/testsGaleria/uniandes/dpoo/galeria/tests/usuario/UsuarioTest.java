@@ -127,7 +127,7 @@ class UsuarioTest {
 		
 		
 		assertAll (
-				() -> assertEquals()
+				() -> assertEquals(true,usuarios.add(usuario))
 		);
 	}
 }

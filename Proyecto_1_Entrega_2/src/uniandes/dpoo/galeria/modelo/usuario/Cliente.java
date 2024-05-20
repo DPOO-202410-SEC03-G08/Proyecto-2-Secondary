@@ -70,6 +70,23 @@ public class Cliente extends Usuario
 	{
 		return piezasConsignadas;
 	}
+	
+	public ArrayList<Pieza> piezasEnPosesion()
+	{
+		ArrayList<Pieza> piezasEnPosesion = new ArrayList<Pieza>();
+		for(Pieza pieza: piezasConsignadas)
+		{
+			piezasEnPosesion.add(pieza);
+		}
+		for(Pieza pieza: piezasCompradas)
+		{
+			if (piezasEnPosesion.contains(pieza) == false)
+			{
+				piezasEnPosesion.add(pieza);
+			}
+		}
+		return piezasEnPosesion;
+	}
 
 	@Override
 	public String getTipoUsuario() 
